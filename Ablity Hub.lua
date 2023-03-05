@@ -1,11 +1,3 @@
-local args = {
-    [1] = "script made by snowy",
-    [2] = "All"
-}
-wait()
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Ablity Hub | Slap Battles", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
@@ -37,5 +29,14 @@ Tab:AddButton({
 
 
 
-end
+
 OrionLib:Init()
+
+local args = {
+    [1] = "script made by snowy",
+    [2] = "All"
+}
+wait()
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
